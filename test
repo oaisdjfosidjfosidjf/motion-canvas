@@ -1,0 +1,52 @@
+import java.util.concurrent.TimeUnit;
+
+public class PhageHuntingAnimation {
+    public static void main(String[] args) {
+        System.out.println("Phage Hunting Protocols: The Spot Titer");
+        System.out.println("Goal: To roughly estimate the concentration of phage in your plate lysates.\n");
+
+        // Part 1: Set up your station for aseptic work
+        System.out.println("Part 1: Set up your station for aseptic work.");
+        sprayWithEthanol();
+        lightBunsenBurner();
+        recapTubesAndPlates();
+
+        // Part 2: Prep Your Spot Plate
+        System.out.println("\nPart 2: Prep Your Spot Plate");
+        labelAgarPlate();
+        drawGridOnPlate();
+        attachPipette();
+
+        System.out.println("\nLab procedure animation completed.");
+    }
+
+    private static void sprayWithEthanol() {
+        System.out.println("a. Spray your station generously with 70% ethanol and wipe the surface with a single paper towel to spread the ethanol evenly.");
+        // Simulate the wait for ethanol to evaporate (not realistic but for demonstration)
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void lightBunsenBurner() {
+        System.out.println("b. Light your Bunsen burner. Be sure to work close to the Bunsen burner throughout the experiment.");
+    }
+
+    private static void recapTubesAndPlates() {
+        System.out.println("c. Throughout the experiment, be sure to quickly recap any tubes or plates you open to prevent contamination.");
+    }
+
+    private static void labelAgarPlate() {
+        System.out.println("2. Label the bottom of an agar plate with your initials, the date, and your sample name (e.g., 'A' or 'D-big'). Be sure to label around the outer rim of the plate, not in the middle!");
+    }
+
+    private static void drawGridOnPlate() {
+        System.out.println("3. Draw a grid on the bottom of your plate as depicted below. Rulers are available if needed.");
+    }
+
+    private static void attachPipette() {
+        System.out.println("4. Open the end of a sterile 5ml serological pipette but leave the pipette inside its sleeve. Attach the pipette to your manual or automatic pipettor.");
+    }
+}
